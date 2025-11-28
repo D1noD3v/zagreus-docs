@@ -7,15 +7,30 @@ site_name: Zagreus Docs
 site_url: https://d1no3v.codeberg.pages
 extra_css:
   - stylesheets/extra.css
+# Material for mkdocs plugins
 plugins:
   - privacy
   - search
   - blog
   - git-authors
+  - offline
 
+# Markdown extensions that material for mkdocs provide
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+# Navbar elements
 nav:
   - Home: index.md
   - About: about.md
+  - Docker:
+      - Docker/docker.md
   - Blog:
       - blog/index.md
 
@@ -29,6 +44,8 @@ theme:
     - navigation.footer
     - content.action.edit
     - content.action.view
+    - content.code.copy
+    - content.code.select
 
   custom_dir: overrides
   favicon: docs/images/bookstack.png
@@ -71,6 +88,7 @@ extra:
       link: https://bsky.app/profile/dinodev.org
     - icon: simple/github
       link: https://github.com/d1nod3v
+  # might not be needed but keep for now
   consent:
     actions:
       - reject
