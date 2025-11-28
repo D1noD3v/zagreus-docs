@@ -1,6 +1,6 @@
-# Welcome to MkDocs
+# Welcome to Zagreus Docs!
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This is the place where I collect all sorts of configurations or compose files for docker. Each entry to this webpage has explainations,
 
 ## Commands
 
@@ -12,6 +12,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 ## Project layout
 
     mkdocs.yml    # The configuration file.
-    docs/
+    docs/         # Where all documentation pages lies.
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
