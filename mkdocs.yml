@@ -24,13 +24,16 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 # Navbar elements
 nav:
   - Home: index.md
-  - About: about.md
-  - Docker:
-      - Docker/docker.md
+  - About: specifications.md
+  - Docker installation: docker.md
+  - Apps:
+      - Immich: Apps/immich.md
   - Blog:
       - blog/index.md
 
