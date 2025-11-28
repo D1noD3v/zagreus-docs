@@ -1,18 +1,41 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Zagreus Docs
 site_url: https://mydomain.org/mysite
+extra_css:
+  - stylesheets/extra.css
+plugins:
+  - privacy
+
+nav:
+  - Home: index.md
+  - About: about.md
 
 theme:
   name: material
+  favicon: docs/images/bookstack.png
+  icon:
+    logo: simple/bookstack
+  font:
+    text: IBM Plex Sans
+    code: JetBrains Mono
+
   palette:
-    - scheme: default
-      primary: deep orange
-      accent: black
+    # Automatic selection of color scheme
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light"
+      scheme: default
+      primary: orange
+      accent: white
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
 
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: orange
       accent: black
       toggle:
