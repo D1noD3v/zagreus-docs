@@ -1,20 +1,42 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
+copyright: Copyright &copy; 2025 D1noD3v
+repo_url: https://codeberg.org/D1noD3v/zagreus-docs
+repo_name: D1noD3v/zagreus-docs
+edit_uri: _edit/main/docs/
 site_name: Zagreus Docs
-site_url: https://mydomain.org/mysite
+site_url: https://d1no3v.codeberg.pages
 extra_css:
   - stylesheets/extra.css
 plugins:
   - privacy
+  - search
+  - blog
+  - git-authors
 
 nav:
   - Home: index.md
   - About: about.md
+  - Blog:
+      - blog/index.md
 
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - search.suggest
+    - announce.dismiss
+    - navigation.footer
+    - content.action.edit
+    - content.action.view
+
+  custom_dir: overrides
   favicon: docs/images/bookstack.png
   icon:
     logo: simple/bookstack
+    repo: simple/codeberg
+    edit: material/pencil
+
   font:
     text: IBM Plex Sans
     code: JetBrains Mono
@@ -41,3 +63,21 @@ theme:
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
+extra:
+  social:
+    - icon: simple/codeberg
+      link: https://codeberg.org/D1noD3v
+    - icon: simple/bluesky
+      link: https://bsky.app/profile/dinodev.org
+    - icon: simple/github
+      link: https://github.com/d1nod3v
+  consent:
+    actions:
+      - reject
+      - accept
+    title: Cookie consent
+    description:
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
