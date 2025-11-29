@@ -16,4 +16,4 @@ All machines have a hostname named after a greek god. Except my Raspberry Pi.
 - Memory: 16 GB ???
 - Storage:
     * Crucial 2TB CT2000P5PSSD8
-- Operating system: CachyOS x86_64 with 6.17.9-2-cachyos kernel.
+- Operating system: CachyOS with 6.17.9-2-cachyos kernel.
