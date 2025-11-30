@@ -1,4 +1,4 @@
-abel==2.17.0
+babel==2.17.0
 backrefs==6.1
 cairocffi==1.7.1
 CairoSVG==2.8.2
