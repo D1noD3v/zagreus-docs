@@ -24,6 +24,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
   - pymdownx.tabbed:
       alternate_style: true
 
@@ -34,7 +36,8 @@ nav:
   - Docker installation: docker.md
   - Apps:
       - Immich: Apps/immich.md
-      - NginxProxyManager(NPM): Apps/nginxproxymanager.md
+      - Nginx Proxy Manager: Apps/nginxproxymanager.md
+      - Glance: Apps/glance.md
   - Blog:
       - blog/index.md
 
@@ -56,6 +59,19 @@ theme:
     logo: simple/bookstack
     repo: simple/codeberg
     edit: material/pencil
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 
   font:
     text: IBM Plex Sans

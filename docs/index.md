@@ -1,5 +1,8 @@
 # Welcome to Zagreus Docs!
 
+!!! info
+    This website is still under development! Please be patient while all the apps are getting added to the website.
+
 This is the place where I collect all sorts of configurations or compose files for docker. Each entry to this webpage has explanation
 
 ## Layout
