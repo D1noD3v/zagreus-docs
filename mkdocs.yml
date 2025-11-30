@@ -103,10 +103,6 @@ extra:
   social:
     - icon: simple/codeberg
       link: https://codeberg.org/D1noD3v
-    - icon: simple/bluesky
-      link: https://bsky.app/profile/dinodev.org
-    - icon: simple/github
-      link: https://github.com/d1nod3v
   # might not be needed but keep for now
   consent:
     actions:
