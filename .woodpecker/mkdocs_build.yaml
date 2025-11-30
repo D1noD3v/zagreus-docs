@@ -21,4 +21,4 @@ steps:
       repository_name: D1noD3v/pages
       branch: main
       ssh_key:
-        from_secret: "ci for pages"
+        from_secret: push_from_ci
