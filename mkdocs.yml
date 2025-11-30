@@ -34,6 +34,7 @@ nav:
   - Docker installation: docker.md
   - Apps:
       - Immich: Apps/immich.md
+      - NginxProxyManager(NPM): Apps/nginxproxymanager.md
   - Blog:
       - blog/index.md
 
@@ -50,7 +51,6 @@ theme:
     - content.code.copy
     - content.code.select
 
-  custom_dir: overrides
   favicon: docs/images/bookstack.png
   icon:
     logo: simple/bookstack
