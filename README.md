@@ -43,9 +43,9 @@ I run the fish shell on my machine and will instead need to use `source bin/acti
 git clone https://codeberg.org/D1noD3v/zagreus-docs.git
 ```
 
-3. Install Material for MkDocs using pip.
+3. Install all the necessary packages required for this project.
 ```bash
-pip install mkdocs-material
+pip install -r requirements.txt
 ```
 
 4. You are now able to server the site locally!
