@@ -9,6 +9,7 @@ steps:
     # build the docs with mkdocs and add the .domains file for codeberg pages
     image: squidfunk/mkdocs-material
     commands:
+      - pip install -r requirements.txt
       - mkdocs build
       - echo -e 'dinodev.org\nD1noD3v.codeberg.page\npages.D1noD3v.codeberg.page' > site/.domains
 
