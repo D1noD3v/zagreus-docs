@@ -1,0 +1,24 @@
+# build and deploy mkdocs to codeberg pages
+# This assumes your code lives in one repo, and you have a <owner>/pages
+# repo which will be used to host the built pages.
+
+steps:
+  build-docs:
+    when:
+      event: push
+    # build the docs with mkdocs and add the .domains file for codeberg pages
+    image: squidfunk/mkdocs-material
+    commands:
+      - mkdocs build
+      - echo -e 'dinodev.org\nD1noD3v.codeberg.page\npages.D1noD3v.codeberg.page' > site/.domains
+
+  deploy-docs:
+    when:
+      event: push
+    image: codeberg.org/xfix/plugin-codeberg-pages-deploy:1
+    settings:
+      folder: site
+      repository_name: D1noD3v/pages
+      branch: main
+      ssh_key:
+        from_secret: "ci for pages"

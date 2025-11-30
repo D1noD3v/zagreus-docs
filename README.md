@@ -1,3 +1,4 @@
+[![status-badge](https://ci.codeberg.org/api/badges/15636/status.svg)](https://ci.codeberg.org/repos/15636)
 # Zagreus docs
 
 A centralized place for storing various configurations and docker compose files for the various apps I run in my server. The documentation will also serve as a sort of wiki if you are looking to setup these apps on your own.
