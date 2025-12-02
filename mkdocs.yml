@@ -32,12 +32,14 @@ markdown_extensions:
 # Navbar elements
 nav:
   - Home: index.md
-  - About: specifications.md
-  - Docker installation: docker.md
   - Apps:
       - Immich: Apps/immich.md
       - Nginx Proxy Manager: Apps/nginxproxymanager.md
       - Glance: Apps/glance.md
+      - Nextcloud: Apps/nextcloud.md
+      - Portainer: Apps/portainer.md
+  - Games:
+      - Minecraft: Games/minecraft.md
   - Blog:
       - blog/index.md
 
